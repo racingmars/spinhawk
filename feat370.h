@@ -27,6 +27,7 @@
 #define FEATURE_TEST_BLOCK
 #define FEATURE_ECPSVM
 #define FEATURE_VM_BLOCKIO
+#define FEATURE_TCPIP_EXTENSION
 
 /* The following ESA/390 features can be retrofitted to S/370 and
    may be activated if desired by uncommenting the appropriate

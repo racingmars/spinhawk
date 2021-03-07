@@ -4172,4 +4172,8 @@ DEF_INST(transaction_end);                                      /*912*/
 DEF_INST(perform_processor_assist);                            /*912*/
 #endif /*defined(FEATURE_PROCESSOR_ASSIST_FACILITY)*/          /*912*/
 
+#if defined(FEATURE_TCPIP_EXTENSION)
+DEF_INST(tcpip);
+#endif
+
 /* end of OPCODE.H */

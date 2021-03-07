@@ -315,6 +315,8 @@ endif
   libherc_la_SOURCES = hconsole.c   \
                        w32util.c    \
                        strsignal.c  \
+                       tcpip.c      \
+                       x75.c        \
                        impl.c       \
                        config.c     \
                        bldcfg.c     \
@@ -578,6 +580,7 @@ EXTRA_DIST = autoconf/config.rpath \
              README.NETWORKING     \
              README.OSX            \
              README.TAPE           \
+             README.TCPIP          \
              README.HERCLOGO       \
              RELEASE.NOTES         \
              README.WIN32          \
@@ -656,6 +659,8 @@ noinst_HEADERS = hostinfo.h     \
                  commadpt.h     \
                  comm3705.h     \
                  tcpnje.h       \
+                 tcpip.h        \
+                 x75.h          \
                  cache.h        \
                  ecpsvm.h       \
                  memrchr.h      \

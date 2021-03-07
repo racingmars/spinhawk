@@ -615,6 +615,10 @@
   #endif
 #endif
 
+#if defined(FEATURE_TCPIP_EXTENSION)
+  #define _FEATURE_TCPIP_EXTENSION
+#endif
+
 #endif /*!defined(FEATALL_CHECKALL)*/
 
 /* end of FEATCHK.H */

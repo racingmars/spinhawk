@@ -1190,6 +1190,9 @@
  UNDEF_INST(store_facility_list_extended)                       /*@Z9*/
 #endif /*!defined(FEATURE_STORE_FACILITY_LIST_EXTENDED)*/       /*@Z9*/
 
+#if !defined(FEATURE_TCPIP_EXTENSION)
+ UNDEF_INST(tcpip)
+#endif
 
 /* The following execute_xxxx routines can be optimized by the
    compiler to an indexed jump, leaving the stack frame untouched
@@ -2688,7 +2691,7 @@ DLL_EXPORT zz_func opcode_table[256][GEN_MAXARCH] = {
  /*72*/   GENx___x___x___ ,
  /*73*/   GENx___x___x___ ,
  /*74*/   GENx___x___x___ ,
- /*75*/   GENx___x___x___ ,
+ /*75*/   GENx37Xx390x900 (tcpip,RX,"TCPIP"),
  /*76*/   GENx___x___x___ ,
  /*77*/   GENx___x___x___ ,
  /*78*/   GENx370x390x900 (load_float_short,RX,"LE"),
